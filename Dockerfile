@@ -2,7 +2,7 @@ FROM nikolaik/python-nodejs:python2.7-nodejs12
 
 ENV KUBECTL_VERSION=v1.17.3
 ENV AWS_IAM_AUTHENTICATOR_VERSION=1.13.7/2019-06-11
-ENV CLOUD_SDK_VERSION=289.0.0
+ENV CLOUD_SDK_VERSION=320.0.0
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get update && \
