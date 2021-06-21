@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python2.7-nodejs12
+FROM nikolaik/python-nodejs:python3.9-nodejs14
 
 ENV KUBECTL_VERSION=v1.17.3
 ENV AWS_IAM_AUTHENTICATOR_VERSION=1.13.7/2019-06-11
