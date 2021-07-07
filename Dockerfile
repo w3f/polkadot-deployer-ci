@@ -6,7 +6,7 @@ ENV CLOUD_SDK_VERSION=320.0.0
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get update && \
-  apt-get install -y --no-install-recommends apt-transport-https ca-certificates gnupg && \
+  apt-get install -y --no-install-recommends apt-transport-https ca-certificates gnupg git && \
   wget https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
   chmod a+x ./kubectl && \
   mv ./kubectl /usr/local/bin && \
